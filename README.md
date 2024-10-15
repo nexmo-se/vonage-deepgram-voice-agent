@@ -6,7 +6,7 @@ It allows connecting voice or video calls to a Deepgram Voice Agent.
 
 A User interacts with the Agent using voice. Real-time transcripts of what the User says as well what the Agent says are also returned.
 
-Barge-in is also supported, meaning if user resumes speaking, an agent voice response in progress would be immediately interrupted
+Barge-in is also supported, meaning if User resumes speaking, an Agent voice response in progress would be immediately interrupted
 
 Vonage API platform supports different voice channels for connecting to Deepgram Voice Agent, including:
 - Public Switched Telephone Network (PSTN), e.g. cell phones, landline phones, VoIP phones/applications connecting via PSTN,
@@ -22,12 +22,12 @@ See the diagram **_overview-diagram.png_**.</br>
 
 In this diagram, the application is shown in two parts for easier description, however both parts are in one source code file in this repository.</br>
 
-First, a call is established with the user, it can be an inbound call or an outbound call,</br>
-then a WebSocket leg is established with the Connector (part 1) which sends the audio from the user to Deepgram Voice Agent (DG VA).</br>
+First, a call is established with the User, it can be an inbound call or an outbound call,</br>
+then a WebSocket leg is established with the Connector (part 1) which sends the audio from the User to Deepgram Voice Agent (DG VA).</br>
 
-Received audio from DG VA are sent to the user.
+Received audio from DG VA are sent to the User.
 
-Received user and agent transcriptions are sent to the Orchestrator (part 2).</br>
+Received User and Agent transcriptions are sent to the Orchestrator (part 2).</br>
 
 
 ## Set up
