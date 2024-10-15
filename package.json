@@ -1,0 +1,19 @@
+{
+  "name": "vonage-deepgram-voice-agent",
+  "version": "1.0.0",
+  "description": "Connecting Vonage API voice calls to Deepgram Voice Agent",
+  "main": "vonage-deepgram-voice-agent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tony Chan",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@vonage/server-sdk": "^3.18.0",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-ws": "^5.0.2",
+    "ws": "^8.18.0"
+  }
+}
