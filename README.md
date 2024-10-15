@@ -1,7 +1,5 @@
 # Connecting Vonage API Voice Calls to Deepgram Voice Agent
 
-WIP - All following is not yet up to date
-
 ## What this appication does
 
 It allows connecting Voice calls to Deepgram Voice Agent.
