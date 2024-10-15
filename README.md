@@ -1,8 +1,8 @@
-# Connecting Vonage API Voice Calls to Deepgram Voice Agent
+# Connecting Vonage API Calls to Deepgram Voice Agent
 
 ## What this appication does
 
-It allows connecting Voice calls to Deepgram Voice Agent.
+It allows connecting voice or video calls to a Deepgram Voice Agent.
 
 A User interacts with the Agent using voice. Real-time transcripts of what the User says as well what the Agent says are also returned.
 
@@ -18,7 +18,7 @@ Vonage API platform supports different voice channels for connecting to Deepgram
 
 ## How this application works
 
-See the diagram **_overview-diagram.png_**.</br>
+See the diagram [**_overview-diagram.png_**](overview-diagram.png).</br>
 
 In this diagram, the application is shown in two parts for easier description, however both parts are in one source code file in this repository.</br>
 
