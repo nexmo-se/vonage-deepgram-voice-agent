@@ -144,7 +144,7 @@ or<br>
 
 ## Live demo
 
-You may test call a demo instance of this application running on [Vonage Cloud Runtime](https://developer.vonage.com/en/vonage-cloud-runtime/overview) by calling +1 **201-365-7974**.
+You may test call a demo instance of this application running on [Vonage Cloud Runtime](https://developer.vonage.com/en/vonage-cloud-runtime/overview) by calling<br> +1 **201-365-7974**.
 
 
 
