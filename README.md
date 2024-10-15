@@ -18,14 +18,14 @@ Vonage API platform supports different voice channels for connecting to Deepgram
 
 ## How this application works
 
-See the diagram [**_overview-diagram.png_**](overview-diagram.png).</br>
+See the diagram **_overview-diagram.png_**.</br>
 
 In this diagram, the application is shown in two parts for easier description, however both parts are in one source code file in this repository.</br>
 
 First, a call is established with the user, it can be an inbound call or an outbound call,</br>
 then a WebSocket leg is established with the Connector (part 1) which sends the audio from the user to Deepgram Voice Agent (DG VA).</br>
 
-Received audio from DG VA are sent to the user
+Received audio from DG VA are sent to the user.
 
 Received user and agent transcriptions are sent to the Orchestrator (part 2).</br>
 
@@ -130,7 +130,7 @@ Call the phone number linked to your Vonage API account.
 
 ### Outbound PSTN call
 
-You may trigger the outbound call by opening the following web address<br>
+You may trigger an outbound call by opening the following web address<br>
 `https://<public_host_name>/call?callee=<callee_phone_number>`<br>
 
 for example:<br>
@@ -141,7 +141,7 @@ or<br>
 
 ## Live demo
 
-You may test call a demo instance of this application running on [Vonage Cloud Runtime](https://developer.vonage.com/en/vonage-cloud-runtime/overview) by calling +1 201-365-7974
+You may test call a demo instance of this application running on [Vonage Cloud Runtime](https://developer.vonage.com/en/vonage-cloud-runtime/overview) by calling +1 **201-365-7974**.
 
 
 
