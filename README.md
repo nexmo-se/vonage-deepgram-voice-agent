@@ -32,6 +32,8 @@ Received user and agent transcriptions are sent to the Orchestrator (part 2).</b
 
 ## Set up
 
+You may choose to deploy locally on your computer for testing, then or directly, in a cloud hosted environment as explained as follows.
+
 ### Local deployment on your computer
 
 #### Node.js
@@ -115,11 +117,12 @@ Default local (not public!) of this application listening `port` is: 8000.
 
 Make sure ngrok is running as per previous section.
 
+
 ### Hosted deployment on Vonage Cloud Runtime
 
 You may deploy on Vonage's serverless infrastructure [Vonage Cloud Runtime](https://developer.vonage.com/en/vonage-cloud-runtime/overview).
 
-WIP - Instructions will be added here in a few days.
+WIP - Instructions will be added here in a few days. Sorry for the delay.
 
 
 ## How to test this application
