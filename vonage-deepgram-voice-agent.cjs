@@ -259,7 +259,9 @@ app.post('/event', async(req, res) => {
 
 });
 
-// //--- Middleware server (for WebSockets from Vonage Voice API platform) - Deepgram Voice Agent connector ---
+//=================== Connector server =========================
+//--- Handling WebSockets from Vonage Voice API platform
+//--- and WebSockets to Deepgram Voice Agent connector
 
 app.ws('/socket', async (ws, req) => {
 
@@ -276,7 +278,7 @@ app.ws('/socket', async (ws, req) => {
   let dgPayload = Buffer.alloc(0);
   let streamToVgIndex = 0;
 
-  //-- stream audio to VG
+  //-- stream audio to VG --
 
   const streamTimer = setInterval ( () => {
 
@@ -285,15 +287,11 @@ app.ws('/socket', async (ws, req) => {
       const streamToVgPacket = Buffer.from(dgPayload).subarray(streamToVgIndex, streamToVgIndex + 640);  // 640-byte packet for linear16 / 16 kHz
       streamToVgIndex = streamToVgIndex + 640;
 
-      // console.log(Date.now());
-
       if (streamToVgPacket.length != 0) {
         if (wsVgOpen) { ws.send(streamToVgPacket) };
       } else {
-        // add code to stop extracting subarrays
         streamToVgIndex = streamToVgIndex - 640; // prevent index to increase for ever as it is beyond buffer current length
       }
-
 
     }  
 
@@ -334,7 +332,7 @@ app.ws('/socket', async (ws, req) => {
         console.log(`Message from DG VA: ${msg}`);
 
         if (JSON.parse(msg)["type"] === "UserStartedSpeaking") { 
-            // implement barge-in
+            // barge-in handling
             dgPayload = Buffer.alloc(0);  // reset stream buffer to VG
             streamToVgIndex = 0;
         }
@@ -361,7 +359,6 @@ app.ws('/socket', async (ws, req) => {
     } else {
 
       if(wsDgOpen) {
-        // console.log(Date.now());  // see timing of audio packets received from VG
         wsDg.send (msg)
       }
 
@@ -385,7 +382,8 @@ app.ws('/socket', async (ws, req) => {
 
 });
 
-//--- If this application is hosted on Vonage Code Runtime (VCR) Vonage's serverless infrastructure  --------
+//================ For Vonage Cloud Runtime (VCR) only ==============
+//--- If this application is hosted on VCR  --------
 
 app.get('/_/health', async(req, res) => {
 
@@ -393,7 +391,7 @@ app.get('/_/health', async(req, res) => {
 
 });
 
-//=========================================
+//=====================================================================
 
 const port = process.env.VCR_PORT || process.env.PORT || 8000;
 
