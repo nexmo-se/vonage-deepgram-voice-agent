@@ -290,7 +290,7 @@ app.ws('/socket', async (ws, req) => {
       if (streamToVgPacket.length != 0) {
         if (wsVgOpen) { ws.send(streamToVgPacket) };
       } else {
-        streamToVgIndex = streamToVgIndex - 640; // prevent index to increase for ever as it is beyond buffer current length
+        streamToVgIndex = streamToVgIndex - 640; // prevent index from increasing for ever as it is beyond buffer current length
       }
 
     }  
