@@ -10,11 +10,10 @@ Barge-in is also supported, meaning if User resumes speaking, an Agent voice res
 
 Vonage API platform supports different voice channels for connecting to Deepgram Voice Agent, including:
 - Public Switched Telephone Network (PSTN), e.g. cell phones, landline phones, VoIP phones/applications connecting via PSTN,
-- Session Initiation Protocol (SIP), e.g. SIP trunking, SIP from Vonage Video API clients,
+- Session Initiation Protocol (SIP), e.g. SIP trunking, SIP from Vonage Video API clients, SIP from Contact Centers,
 - Vonage Voice API WebRTC clients (Web, iOS, Android),
 - Vonage Video API WebRTC clients (Web, iOS, Android),
-- WebSocket connections, e.g. from Contact Centers, augmenting existing Voice applications,
-- WhatsApp mobile application (iOS, Android).
+- WebSocket connections, e.g. from Contact Centers, augmenting existing Voice applications.
 
 ## How this application works
 
