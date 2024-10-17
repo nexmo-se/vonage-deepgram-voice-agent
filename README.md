@@ -15,8 +15,9 @@ Vonage API platform supports different voice channels for connecting to Deepgram
 - Vonage Video API WebRTC clients (Web, iOS, Android),
 - WebSocket connections, e.g. from Contact Centers, augmenting existing Voice applications.
 
-In this sample application code, users are connected with inbound or outbound PSTN calls.<br>
-The application may easily be updated to support other channels. You may [contact us](https://www.vonage.com/communications-apis/contact-api/) as you are building your next project.
+In this sample application code, users are connected with inbound or outbound PSTN calls.<br><br>
+
+The application may be easily updated to support other channels. You may [contact us](https://www.vonage.com/communications-apis/contact-api/) as you are building your next project.
 
 ## How this application works
 
