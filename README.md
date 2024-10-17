@@ -6,7 +6,7 @@ It allows connecting [Voice](https://www.vonage.com/communications-apis/voice/) 
 
 A User interacts with the Agent using voice. Real-time transcripts of what the User says as well what the Agent says are also returned.
 
-Barge-in is also supported, meaning if User resumes speaking, an Agent voice response in progress would be immediately interrupted
+Barge-in is supported, meaning if User resumes speaking, an Agent voice response in progress would be immediately interrupted
 
 Vonage API platform supports different **voice channels** for connecting to Deepgram Voice Agent, including:
 - Public Switched Telephone Network (**PSTN**), e.g. cell phones, landline phones, VoIP phones/applications connecting via PSTN,
