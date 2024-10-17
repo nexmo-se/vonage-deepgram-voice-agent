@@ -2,7 +2,7 @@
 
 ## What this application does
 
-It allows connecting voice or video calls to a Deepgram Voice Agent.
+It allows connecting [Voice](https://www.vonage.com/communications-apis/voice/) or [Video](https://www.vonage.com/communications-apis/video/) calls to a [Deepgram Voice Agent](https://deepgram.com/learn/introducing-ai-voice-agent-api) for interaction with an LLM AI Voice Assistant.
 
 A User interacts with the Agent using voice. Real-time transcripts of what the User says as well what the Agent says are also returned.
 
@@ -14,6 +14,9 @@ Vonage API platform supports different voice channels for connecting to Deepgram
 - Vonage Voice API WebRTC clients (Web, iOS, Android),
 - Vonage Video API WebRTC clients (Web, iOS, Android),
 - WebSocket connections, e.g. from Contact Centers, augmenting existing Voice applications.
+
+In this sample application code, users are connected with inbound or outbound PSTN calls.<br>
+The application may easily be updated to support other channels. You may [contact us](https://www.vonage.com/communications-apis/contact-api/) as you are building your next project.
 
 ## How this application works
 
