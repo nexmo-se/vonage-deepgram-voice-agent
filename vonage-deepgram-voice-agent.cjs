@@ -50,6 +50,36 @@ const { Vonage } = require('@vonage/server-sdk');
 
 const vonage = new Vonage(credentials, options);
 
+//--- Streaming timer - Audio packets to Vonage ---
+
+// const timer = 19; // in ms, actual timer duration is higher
+const timer = 18; // in ms, actual timer duration is higher
+
+//--- Streaming timer calculation ---
+
+let prevTime = Date.now();
+let counter = 0;
+let total = 0;
+let cycles = 2000;
+
+console.log('\n>>> Wait around', Math.round(cycles * timer / 1000), 'seconds to see the actual streaming timer average ...\n');
+
+const streamTimer = setInterval ( () => {
+    
+    const timeNow = Date.now();
+    const difference = timeNow - prevTime;
+    total = total + difference;
+    prevTime = timeNow;
+
+    counter++;
+
+    if (counter == cycles) { 
+        clearInterval(streamTimer);
+        console.log('\n>>> Average streaming timer (should be close to 20 AND under 20.000):', total / counter);
+    };
+
+}, timer);
+
 //---- Deepgram Voice Agent ----
 
 const dgApiKey = process.env.DEEPGRAM_API_KEY;
@@ -73,7 +103,7 @@ const dgVoiceAgentSettings =
     {
         "listen":
         {
-            "model": "nova-2"
+            "model": "nova-3"
         },
         "think":
         {
@@ -295,7 +325,7 @@ app.ws('/socket', async (ws, req) => {
 
     }  
 
-  }, 20);
+  }, timer);
 
   //--
 
