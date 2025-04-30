@@ -12,8 +12,8 @@ Vonage API platform supports different **voice channels** for connecting to Deep
 - Public Switched Telephone Network (**PSTN**), e.g. cell phones, landline phones, VoIP phones/applications connecting via PSTN,
 - Session Initiation Protocol (**SIP**), e.g. SIP trunking, SIP from Vonage Video API clients, SIP from Contact Centers,
 - Vonage **Voice WebRTC clients** (Web, iOS, Android),
-- Vonage **Video WebRTC clients** (Web, iOS, Android),
-- **WebSocket** connections, e.g. from Contact Centers, augmenting existing Voice applications.
+- Vonage **Video WebRTC clients** (Web, iOS, Android, React Native, Windows, macOS, Linux),
+- **WebSocket** connections, e.g. from Contact Centers, or augmenting existing Voice applications.
 
 In this sample application code, users are connected with inbound or outbound PSTN calls.
 
